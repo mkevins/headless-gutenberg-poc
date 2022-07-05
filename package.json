@@ -7,5 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Matthew Kevins",
-  "license": "GPL-2.0-or-later"
+  "license": "GPL-2.0-or-later",
+  "type": "module"
 }
