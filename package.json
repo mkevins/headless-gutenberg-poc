@@ -8,5 +8,8 @@
   },
   "author": "Matthew Kevins",
   "license": "GPL-2.0-or-later",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "@wordpress/block-library": "^7.9.0"
+  }
 }
