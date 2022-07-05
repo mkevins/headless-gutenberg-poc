@@ -1,0 +1,11 @@
+{
+  "name": "headless-gutenberg-poc",
+  "version": "0.0.1",
+  "description": "Project to establish the minimal requirements to generate Gutenberg blocks without a GUI.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Matthew Kevins",
+  "license": "GPL-2.0-or-later"
+}
