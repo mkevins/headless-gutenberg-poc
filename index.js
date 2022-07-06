@@ -1,6 +1,6 @@
 import './globals.js';
 import {registerCoreBlocks} from '@wordpress/block-library';
-import {createBlock} from '@wordpress/blocks';
+import {createBlock, serialize} from '@wordpress/blocks';
 
 registerCoreBlocks();
 
@@ -8,4 +8,7 @@ const block = createBlock('core/paragraph', {
   content: "Hello blocks!",
 });
 
-console.log(block);
+const output = serialize(block);
+
+process.stdout.write(output);
+process.stdout.write('\n');
