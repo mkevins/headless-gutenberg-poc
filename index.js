@@ -11,7 +11,16 @@ const blocks = Array.from({length: 5}, (e, i) => (
   })
 ));
 
-const output = serialize(blocks);
+const list = createBlock('core/list', {
+  ordered: true,
+  values: [
+    'Peanut butter',
+    'Jelly',
+    'Bread',
+  ].map(item => `<li>${item}</li>`).join(''),
+});
+
+const output = serialize([...blocks, list]);
 
 process.stdout.write(output);
 process.stdout.write('\n');
